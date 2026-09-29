@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taisuru Constituency Community Registration 2026" />
+  <title>Taisuru Constituency — Community Registration 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <div class="eyebrow"><span class="sprout">♧</span> YOUR VOICE, OUR COMMUNITY</div>
+      <div class="registration">COMMUNITY REGISTRATION · 2026</div>
+
+      <h1><span>TAISURU</span><br>CONSTITUENCY</h1>
+
+      <div class="divider"></div>
+
+      <p class="intro">
+        A better community begins with listening. Share what matters<br class="desktop">
+        to you and help shape the work ahead.
+      </p>
+
+      <div class="info-card">
+        <div class="pin-icon">⌾</div>
+        <p>Every response helps us understand the<br class="desktop"> needs of our neighbourhood.</p>
+      </div>
+    </header>
+
+    <section class="form-card">
+      <div class="form-heading">
+        <div class="eyebrow">HAVE YOUR SAY</div>
+        <h2>Community form</h2>
+        <p>All fields are required so we can understand your needs.</p>
+      </div>
+
+      <form id="communityForm"
+          action="https://formsubmit.co/ajax/mohsinbaghi786@gmail.com"
+          method="POST"
+          novalidate>
+      <input type="hidden" name="_subject" value="New Taisuru Constituency Community Registration" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+        <div class="two-column">
+          <label>
+            <span>Your name <b>*</b></span>
+            <input id="name" name="name" type="text" placeholder="Full name" required />
+            <small class="error"></small>
+          </label>
+
+          <label>
+            <span>Your address <b>*</b></span>
+            <input id="address" name="address" type="text" placeholder="Area, street or village" required />
+            <small class="error"></small>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Do you have any issue? <b>*</b></span>
+          <em>Tell us about any concern affecting you or your neighbourhood.</em>
+          <textarea id="issue" name="issue" placeholder="Write your answer here..." required></textarea>
+          <small class="error"></small>
+        </label>
+
+        <label class="field">
+          <span>What do you think our councillor should mainly focus on? <b>*</b></span>
+          <em>What change or improvement would make the biggest difference to you?</em>
+          <textarea id="focus" name="focus" placeholder="Share what you would like to see prioritised..." required></textarea>
+          <small class="error"></small>
+        </label>
+
+        <label class="field">
+          <span>Give some suggestions or ask a question for the councillor <b>*</b></span>
+          <em>Your ideas and questions are welcome.</em>
+          <textarea id="suggestion" name="suggestion" placeholder="Add your suggestion or question..." required></textarea>
+          <small class="error"></small>
+        </label>
+
+        <div class="submit-area">
+          <button type="submit">Submit registration <span>↗</span></button>
+          <p>For more queries, contact: +91 9103030184</p>
+        </div>
+
+        <div id="success" class="success" role="status" aria-live="polite">
+          <strong>Registration submitted.</strong>
+          <span>Thank you for sharing your views.</span>
+        </div>
+      </form>
+    </section>
+
+    <footer></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
